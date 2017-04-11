@@ -1,7 +1,9 @@
 # tensorflow-yolo
 
 ### Require
-	tensorflow-1.0
+- tensorflow-1.0
+- cv2, try ```pip install python-opencv```
+
 ### download pretrained model
 
 yolo_tiny: <a>https://drive.google.com/file/d/0B-yiAeTLLamRekxqVE01Yi1RRlk/view?usp=sharing</a>
@@ -43,7 +45,7 @@ yolo_tiny: <a>https://drive.google.com/file/d/0B-yiAeTLLamRekxqVE01Yi1RRlk/view?
 
 	```
     cd $YOLO_ROOT/data
-    ln -s $VOCdevkit VOCdevkit2007
+    ln -s VOCdevkit VOCdevkit2007
     ```
     Using symlinks is a good idea because you will likely want to share the same PASCAL dataset installation between multiple projects.
 
@@ -52,10 +54,13 @@ yolo_tiny: <a>https://drive.google.com/file/d/0B-yiAeTLLamRekxqVE01Yi1RRlk/view?
 ```
 python tools/preprocess_pascal_voc.py
 ```
+
 #### train
+
 ```
 python tools/train.py -c conf/train.cfg
 ```
+
 #### Train your customer data
 
 1. transform your training data to text_record file(the format reference to pascal_voc)

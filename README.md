@@ -1,8 +1,19 @@
 # tensorflow-yolo
 
 ### Require
-- tensorflow-1.0
-- cv2, try ```pip install python-opencv```
+#### tensorflow-1.0
+
+See https://www.tensorflow.org/install/install_linux#installing_with_virtualenv
+
+#### opencv
+
+Try ```pip install python-opencv```
+
+If pip install failed, then install it from the source: http://opencv.org/releases.html
+
+#### numpy
+
+Try ```pip install numpy```
 
 ### download pretrained model
 

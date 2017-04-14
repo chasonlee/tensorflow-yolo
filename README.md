@@ -7,7 +7,7 @@ See https://www.tensorflow.org/install/install_linux#installing_with_virtualenv
 
 #### opencv
 
-Try ```pip install python-opencv```
+Try ```pip install opencv-python```
 
 If pip install failed, then install it from the source: http://opencv.org/releases.html
 
